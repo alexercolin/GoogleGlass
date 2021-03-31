@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang ="pt-br">
+
+<head>
+    <meta charset="UTF-8"/> <!--UTF-8 é a base do português, aceita a acentuação e tudo mais.-->
+    <title>Tudo sobre Google Glass</title>
+    <!--Chama o arquivo estilo.css-->
+    <link rel="stylesheet" href="_css/estilo.css">
+    <link rel="stylesheet" href="_css/media.css">
+
+
+</head>
+<script language="javascript" src= "_javascript/funcoes.js"></script>
+<body>
+<div id ="interface">
+
+
+    <header id="cabecalho"> 
+    <hgroup> <!--Agrupar-->
+<h1>Google Glass</h1>
+<h2>A revolução do Google está chegando</h2>
+    </hgroup>
+
+    <img id="icone" src ="_imagens/multimidia.png  ">
+
+
+<!--Lista de navegação, sempre fica entre nav, ol é ordered list e ul unordered list -->
+<nav id="menu">
+    
+ <h1> Menu Principal</h1>
+ <ul type="disc">
+     <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="index.html">Home</a></li>  
+     <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="specs.html">Especificações</a></li>
+     <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fotos.html">Fotos</a></li>
+     <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="multimidia.html">Multimídia</a></li>
+     <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+ </ul>
+</nav>
+
+</header>
+
+<section id="corpo-full">
+    <article id="noticia-principal">
+      <header id ="cabecalho-artigo">
+       <hgroup>
+           <h3>Glass > Multimídia</h3>
+           <h1>Sons e Vídeos</h1>
+           <h2>por Alex Ercolin</h2>
+           <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+       </hgroup>
+    </header>
+
+
+<!--Todo código abaixo é utilizado para colocar vídeos e áudios no site, lembrando que para o SAFARI o formato deverá ser em ogg ou também o aac, do jeito que está o código, não funciona para o Safari-->
+
+<!--Para colocar um vídeo do youtube, basta ir no vídeo do youtube, clickar em compartilhar ->incorporar e copiar o iframe dado pelo youtube, aí só coloar no local do site que o vídeo aparecerá, pode criar um <video> se quiser e div para configurar no css depois as posições-->
+    <div id="tv-radio">
+        <audio id="musica" controls="controls">
+            <source src="_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg"/>
+            Desculpe, mas não foi possível carregar o aúdio.
+        </audio>
+        <video id="filme" controls="controls" poster="_imagens/video-mini03.jpg">
+              <source src="_media/getting-started.mp4" type ="video/mp4"/>
+              Desculpe, mas não foi possível carregar o vídeo.
+        </video>
+
+
+     </article>
+</section>
+
+
+<footer id="rodape">
+    <p>Copyright &copy; 2013 - by Gustavo Guanabara <br/>
+    <a href="http://facebook.com" style="text-decoration: none" target="blank"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp; Facebook</a> |
+    <a href="http://twitter.com"  target="blank">Twitter</a></p>
+    </footer>
+    
+    </div>
+    </body>
+    </html>
